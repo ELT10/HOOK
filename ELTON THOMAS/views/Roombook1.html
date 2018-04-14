@@ -1,0 +1,242 @@
+<HTML>
+<HEAD>
+    <TITLE>HOOK</TITLE>
+    <style> body {
+        background-image: url("maxresdefault.jpg");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed; ;
+        color: #666666;
+        font-family: 'RobotoDraft', 'Roboto', sans-serif;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .form-style-6{
+        font: 95% Arial, Helvetica, sans-serif;
+        max-width: 450px;
+        margin: 10px auto;
+        padding: 16px;
+      }
+
+    .form-style-6 select
+    {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 3px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% Arial, Helvetica, sans-serif;
+    }
+
+    .form-style-6 select:focus
+    {
+        box-shadow: 0 0 5px #43D1AF;
+        padding: 3%;
+        border: 1px solid #43D1AF;
+    }
+
+    .form-style-6 input[type="submit"],
+    .form-style-6 input[type="button"]{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        padding: 3%;
+        background: #33b5e5;
+        border-bottom: 2px solid #30C29E;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        color:  ‎#708090;
+    }
+    .form-style-6 input[type="submit"]:hover,
+    .form-style-6 input[type="button"]:hover{
+        background: #2EBC99;
+    }
+
+    background-color:#FEFCFF;
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+    }
+    .dropdon {
+        position: relative;
+        display: inline-block;
+    }
+
+    .drop{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        min-height: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdon:hover .drop{
+        display: block;
+    }
+    </style>
+</HEAD>
+<BODY>
+<header>
+    <h1 style=" color: rgba(26,89,120,0.9);position:absolute; TOP:-10; LEFT:685px;font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;font-size: 30px;">HO</h1>
+    <h2 style="color: #7cbcd6;position:absolute; TOP:-15; LEFT:723px;font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;font-size: 30px;">OK</h2>
+</header>
+    <div class="form-style-6">
+    <h1 style="position:relative; TOP:10px; LEFT:160px;">Booking Details</h1>
+    <form  action="confirm" method="post">
+        <h2 style="position:relative; TOP:61px; LEFT:5px;">Room : </h2> <div class="dropdown1" style="position:relative; TOP:10px; LEFT:100px;">
+        <select>
+            <option value="kg">King - 2000 per night</option>
+            <option value="Tn">Twin - 2000 per night</option>
+            <option value="Studio">Studio - 3000 per night</option>
+            <option value="minisuite">Mini-Suite - 5000 per night</option>
+            <option value="suite">Suite - 7000 per night</option>
+        </select>
+    </div>
+        <div class="dropdon">
+            <span>Check here to see the Tariff</span>
+            <div class="drop">
+                <p> <center>
+                <table cellspacing='25' >
+                    <thead>
+                    <tr>
+                        <th>Room Type</th>
+                        <th>No of Beds</th>
+                        <th>Occupancy allowed</th>
+                        <th>Rate</th>
+                    </tr>
+                    </thead>
+
+
+                    <tbody>
+
+                    <tr>
+                        <td><b>KING</b></td>
+                        <td>Single</td>
+                        <td>Two</td>
+                        <td>2000/-</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>TWIN </b></td>
+                        <td>Double</td>
+                        <td>Two</td>
+                        <td>2000/-</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>STUDIO</b></td>
+                        <td>Double</td>
+                        <td>Three</td>
+                        <td>3000/-</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>MINI-SUITE</b></td>
+                        <td>Double</td>
+                        <td>Four</td>
+                        <td>5000/-</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>SUITE</b></td>
+                        <td>Double</td>
+                        <td>Four</td>
+                        <td>7000/-</td>
+                    </tr>
+
+
+                    </tbody>
+                    <!-- Table Body -->
+
+                </table>
+
+            </center></p>
+            </div>
+        </div>
+        <h3 style="position:relative; TOP:61px; LEFT:5px;">Adults : </h3> <div class="dropdown2" style="position:relative; TOP:10px; LEFT:100px;">
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+        <h4 style="position:relative; TOP:61px; LEFT:5px;">Children : </h4> <div class="dropdown3" style="position:relative; TOP:10px; LEFT:100px;">
+        <select>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="1">2</option>
+        </select>
+        <input type="submit" value="Confirm Booking" >
+    </div>
+    </form>
+
+
+        <div class="dropdown" style="position:absolute; TOP:550px; LEFT:00px;">
+        <img src="https://images.trvl-media.com/media/content/expus/graphics/launch/hotel1320x742.jpg" alt="Trolltunga Norway" width="300" height="150">
+        <div class="dropdown-content">
+            <img src="https://images.trvl-media.com/media/content/expus/graphics/launch/hotel1320x742.jpg" alt="Trolltunga Norway" width="1000" height="600">
+            <div class="desc">KING ROOM</div>
+        </div>
+    </div>
+    <div class="dropdown" style="position:absolute; TOP:550px; LEFT:330px;">
+        <img src="http://www.shximai.com/data/out/99/67158844-hotel-wallpapers.jpg" alt="Trolltunga Norway" width="300" height="150">
+        <div class="dropdown-content">
+            <img src="http://www.shximai.com/data/out/99/67158844-hotel-wallpapers.jpg" alt="Trolltunga Norway" width="1000" height="600">
+            <div class="desc">POOL AREA</div>
+        </div>
+    </div>
+    <div class="dropdown" style="position:absolute; TOP:550px; LEFT:690px;">
+        <img src="http://www.poloniapalace.com/d/polonia/images/block3_Img.jpg?1409732811" alt="Trolltunga Norway" width="300" height="150">
+        <div class="dropdown-content">
+            <img src="http://www.poloniapalace.com/d/polonia/images/block3_Img.jpg?1409732811" alt="Trolltunga Norway" width="1000" height="600">
+            <div class="desc">Mini-Suite</div>
+        </div>
+    </div>
+    <div class="dropdown" style="position:absolute; TOP:550px; LEFT:1020px;">
+        <img src="http://www.hotel-chinzanso-tokyo.com/wp-content/uploads/sites/225/2015/11/Hotel-Chinzanso-Tokyo_living-room-image-of-suie.jpg" alt="Trolltunga Norway" width="300" height="150">
+        <div class="dropdown-content">
+            <img src="http://www.hotel-chinzanso-tokyo.com/wp-content/uploads/sites/225/2015/11/Hotel-Chinzanso-Tokyo_living-room-image-of-suie.jpg" alt="Trolltunga Norway" width="1000" height="600">
+            <div class="desc">Suite</div>
+        </div>
+    </div>
+
+</BODY>
+</HTML>
